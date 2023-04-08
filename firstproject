@@ -1,0 +1,61 @@
+
+
+def main():
+    print("---------------------------------------WELCOME TO THE GUESS GAME------------------------------")
+    name = input("Enter your name: ")
+    age = int(input("Enter your age: "))
+    stid = int(input("Enter your student ID: "))
+    email = input("What is your email: ")
+    print(name)
+    print(age)
+    print(stid)
+    print(email)
+    option = input("If the information is correct, select y/n: ")
+    if option.lower() == 'y':
+        print("Thank you for the correct information and good luck with the game")
+        guess1()
+    else:
+        return main()
+
+def guess1():
+    print("--------------------------------------There are only going to be three questions, answer y/n ------------------------------------------")
+    question = input("Is Donald Trump Mexican? (y/n): ")
+    print(question)
+    if question.lower() == 'n':
+        print("You are correct! Please move on to the next question.")
+        guess2()
+    else:
+        print ("wrong! suck ur mom")
+
+def guess2():
+    question = input("Is the sky blue? (y/n): ")
+    print(question)
+    if question.lower() == 'y':
+        print("You are correct! Please move on to the next question.")
+        guess3()
+    else:
+        print ("wrong! suck ur mom")
+
+def guess3():
+    question = input("Is the moon squared? (y/n): ")
+    print(question)
+    if question.lower() == 'n':
+        print("You are correct! Please move on to the next question.")
+        guess4()
+    else:
+        print ("wrong! suck ur mom")
+
+def guess4():
+    question = input("Is the 2+2 =5? (y/n): ")
+    print(question)
+    if question.lower() == 'n':
+        print("You are correct! Congratulations, you have completed the game!")
+    else:
+        print ("wrong! suck ur mom")
+
+
+
+
+if __name__ == '__main__':
+
+    main()
